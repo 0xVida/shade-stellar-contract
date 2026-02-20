@@ -7,4 +7,5 @@ pub enum ContractError {
     NotAuthorized = 1,
     AlreadyInitialized = 2,
     NotInitialized = 3,
+    Reentrancy = 4,
 }

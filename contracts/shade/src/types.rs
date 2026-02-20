@@ -14,6 +14,7 @@ pub enum DataKey {
     MerchantBalance(Address),
     Invoice(u64),
     InvoiceCount,
+    ReentrancyStatus,
 }
 
 #[contracttype]
