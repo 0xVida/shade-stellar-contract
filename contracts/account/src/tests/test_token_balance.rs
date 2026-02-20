@@ -22,7 +22,8 @@ fn setup_initialized_account(env: &Env) -> (Address, MerchantAccountClient<'_>, 
 
 fn create_test_token(env: &Env) -> Address {
     let token_admin = Address::generate(env);
-    env.register_stellar_asset_contract_v2(token_admin).address()
+    env.register_stellar_asset_contract_v2(token_admin)
+        .address()
 }
 
 #[test]
