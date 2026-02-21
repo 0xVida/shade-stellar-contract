@@ -32,6 +32,4 @@ pub trait ShadeTrait {
     fn pause(env: Env, admin: Address);
     fn unpause(env: Env, admin: Address);
     fn is_paused(env: Env) -> bool;
-
-    fn upgrade(env: Env, new_wasm_hash: soroban_sdk::BytesN<32>);
 }
